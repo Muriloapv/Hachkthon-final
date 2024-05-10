@@ -34,9 +34,9 @@ header {
 }
 
 header a{
+    text-align: center;
     color: white;
 }
-
 
 @media (max-width:926px){
     header h1 {

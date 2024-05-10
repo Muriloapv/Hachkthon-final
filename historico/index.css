@@ -34,7 +34,8 @@ header {
 }
 
 header a{
-    color: white;
+  text-align: center;
+  color: white;
 }
 
 
@@ -120,10 +121,15 @@ nav a:hover{
 
 @media (max-width:926px){
   .container-irrigacao {
-    width: 800px;
+    width: 830px;
     height: 1000px;
     display: flex;
     flex-direction: column;
+    background-color: rgb(170, 170, 170);
+  }
+  .month h3 {
+    padding-top: 18px;
+    font-size: 20px;
   }
 }
 .calendario {
@@ -138,6 +144,10 @@ nav a:hover{
     flex-direction: column;
     margin-left: 18px;
 }
+  .weekdays {
+    display: flex;
+  }
+ 
 
 }
 .month {
@@ -199,7 +209,7 @@ nav a:hover{
   text-align: center;
   margin-bottom: 5px;
   font-size:12px;
-  color: #777;
+  color: #222222;
 }
 
 .days li .active {
@@ -224,6 +234,8 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     margin-left: 18px;
+    color: black;
+    background-color: #ddd;
   }
 }
 
@@ -278,7 +290,8 @@ nav a:hover{
     height: 1200px;
     display: flex;
     flex-direction: column;
-    background-color: blue;
+    background-color: rgb(170, 170, 170);
+    
 }}
 
 .calendario-chuva {
@@ -291,6 +304,7 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     margin-left: 18px;
+    
 }}
 
 .month {
@@ -327,14 +341,14 @@ nav a:hover{
 .weekdays {
   margin: 0;
   padding: 10px 0;
-  background-color: #ddd;
+  background-color: #ffffff;
 
 }
 
 .weekdays li {
   display: inline-block;
   width: 13.6%;
-  color: #666;
+  color: #000000;
   text-align: center;
 }
 
@@ -380,7 +394,8 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     margin-left: 18px;
-    padding-top: ;
+    color: black;
+    background-color: #ddd;
 }}
 
 .infos-produtor{

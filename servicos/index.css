@@ -32,11 +32,10 @@ header {
     color: #ffffff
 
 }
-
 header a{
+    text-align: center;
     color: white;
 }
-
 
 @media (max-width:926px){
     header h1 {
@@ -126,13 +125,32 @@ section h1{
     max-width: 700px;
 }
 
+
+@media (max-width:926px){
+    .services {
+        display: flex;
+        flex-direction: column;
+    }
+    .services p {
+        width: 350px;
+    }
+    .services h1 {
+        padding-bottom: 40px;
+    }
+
+    .services img {
+        border-radius: 10px;
+        padding-top: 20px;
+        margin: 0 auto;
+        width: 340px;
+    }
+}
 .product {
     padding-top: 80px;
     padding-bottom: 50px;
     display: flex;
     justify-content: space-evenly;
     margin: 0 auto;
-
 }
 
 .product p {
@@ -153,6 +171,25 @@ section h1{
     flex-direction: column;
 }
 
+@media (max-width:926px){
+    .product {
+        display: flex;
+        flex-direction: column;
+    }
+    .product p {
+        width: 350px;
+    }
+    .product h1 {
+        padding-bottom: 40px;
+    }
+
+    .product img {
+        border-radius: 10px;
+        padding-top: 20px;
+        margin: 0 auto;
+        width: 340px;
+    }
+}
 
 
 footer {

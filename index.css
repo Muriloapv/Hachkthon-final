@@ -32,6 +32,7 @@ header {
 }
 
 header a{
+    text-align: center;
     color: white;
 }
 
@@ -113,15 +114,23 @@ nav a:hover{
     z-index: 1;
 }
 
+@media (max-width:926px){
+    #map {
+        width: 370px;
+        height: 450px;
+        border-radius: 20PX;
+        z-index: 1;
+    }
+}
+
+
 .maps {
     width: 1300px;
     height: 450px;
     margin: 0 auto;
     border: 5px solid black;
     border-radius: 25px;
-/*     background-image: url(/img/mapa.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; */
+
 }
 
 
