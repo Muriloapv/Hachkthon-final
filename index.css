@@ -20,7 +20,10 @@ img {
 
 header {
     display: flex;
-    background-color: #1c5a31;
+    background: #1C5A31;
+    background: -moz-linear-gradient(left, #1C5A31 0%, #288146 50%, #1C5A31 100%);
+    background: -webkit-linear-gradient(left, #1C5A31 0%, #288146 50%, #1C5A31 100%);
+    background: linear-gradient(to right, #1C5A31 0%, #288146 50%, #1C5A31 100%);
     padding-top: 10px;
     margin: 0 auto;
     justify-content: center;
@@ -59,8 +62,10 @@ header a{
 
 
 nav {
-    background-color: #1c5a31;
-    padding-bottom: 10px;
+    background-color: #1c5a31;      
+    padding-bottom: 15px;
+    padding-top: 12px;
+    margin: 0 auto;
 }
 
 .nav-ul {
@@ -70,12 +75,26 @@ nav {
 
 .nav-li {
     font-size: 25px;
+    margin-left: 20px;
 }
 
 nav a{
-    color: white;
+    padding: 10px;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    color: #1c5a31;
 }
-/* --- */
+
+
+
+nav a:hover{
+    transition: all 0.3s ease;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #00000080;
+    border: 2px solid black;
+}
+
 
 
 .space {
@@ -93,6 +112,7 @@ nav a{
     background-size: cover;
 }
 
+
 @media (max-width:926px){
     .maps{
         width: 370px;
@@ -103,11 +123,12 @@ nav a{
 .box {
     width: 40px;
     height: 150px;
-    background-color: rgba(0, 0, 0, 0.755);
-    backdrop-filter: blur(12px);
+    background-color: rgba(0, 0, 0, 0.574);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );   
     position: relative;
-    left: 30px;
-    top: 20px;
+    left: 10px;
+    top: -43px;
 
     display: flex;
     flex-direction: column;
@@ -120,11 +141,14 @@ nav a{
 }
  
 label {
+    text-align: center;
     font-size: 15px;
     color: white;
 }
 .alto {
     background-color: red;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .medio {
@@ -134,6 +158,34 @@ label {
 .baixo {
     background-color: green;
 }
+
+.moreRemove{
+    background-color: rgba(0, 0, 0, 0.574);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );  
+    width: 30px;
+    border-radius: 20px;
+    position: relative;
+    left: 10px;
+    top: 180px;
+}
+
+.icons {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+}
+.icons hr{
+    width: 20px;
+    color: white;
+}
+
+
+
 .spaceInfo {
     padding-top: 4px;
 }
@@ -144,12 +196,46 @@ label {
     height: 110px;
     margin: 0 auto;
     background-color: rgb(96, 96, 135);
+
+}
+
+.alerta {
+  display: flex;
+  justify-content: end;
+  margin-right: 5px;
+  padding-top: 1px;
+}
+
+
+.alerta img {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.574);
+  backdrop-filter: blur( 13.5px );
+  -webkit-backdrop-filter: blur( 13.5px );  
+}
+
+.alert-info {
+  display: flex;
+  justify-content: end;
+  padding-top: 140px;
+  margin-right: 6px;
+}
+
+.alert-info img {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.574);
+  backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );  
 }
 
 
 
 
-.clima {
+/* .clima {
     display: flex;
     justify-content: space-between;
     margin-left: 40px;
@@ -157,7 +243,7 @@ label {
     padding-top: 20px;
     color: white;
 }
-
+ */
 .infos{
     display: flex;
     justify-content: center;
@@ -177,9 +263,6 @@ label {
         flex-direction: column;
     }
 }
-
-
-
   
   .cards .red {
     background-color: #1c5a31;
