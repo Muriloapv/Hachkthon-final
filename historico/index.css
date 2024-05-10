@@ -97,7 +97,11 @@ nav a:hover{
     border: 2px solid black;
 }
 
-
+@media (max-width:926px){
+  nav a{
+      font-size: 13px;
+  }
+}
 
 /* ----------------------------- */
 
@@ -114,13 +118,28 @@ nav a:hover{
     margin: 0 auto;
 }
 
+@media (max-width:926px){
+  .container-irrigacao {
+    width: 800px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .calendario {
     width: 600px;
     height: 400px;
 }
 
+@media (max-width:926px){
+  .calendario {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 18px;
+}
 
-
+}
 .month {
   border-radius: 10px;
   padding: 70px 25px;
@@ -189,25 +208,23 @@ nav a:hover{
   color: white !important
 }
 
-/* Add media queries for smaller screens 
-@media screen and (max-width:720px) {
-  .weekdays li, .days li {width: 13.1%;}
-}
-
-@media screen and (max-width: 420px) {
-  .weekdays li, .days li {width: 12.5%;}
-  .days li .active {padding: 2px;}
-}
-
-@media screen and (max-width: 290px) {
-  .weekdays li, .days li {width: 12.2%;}
-}*/
 
 .desc-calendario{
     width: 600px;
     height: 400px;
     background-color: rgb(108, 108, 108);
     border-radius: 10px;
+}
+
+@media (max-width:926px){
+  .desc-calendario{
+    border-radius: 10px;
+    width: 350px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 18px;
+  }
 }
 
 .infos-produtor{
@@ -254,10 +271,27 @@ nav a:hover{
     margin: 0 auto;
 }
 
+
+@media (max-width:926px){
+  .container-chuva {
+    width: 800px;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+}}
+
 .calendario-chuva {
     width: 580px;
     height: 400px;
 }
+@media (max-width:926px){
+  .calendario-chuva {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 18px;
+}}
 
 .month {
   border-radius: 10px;
@@ -327,19 +361,6 @@ nav a:hover{
   color: white !important
 }
 
-/* Add media queries for smaller screens 
-@media screen and (max-width:720px) {
-  .weekdays li, .days li {width: 13.1%;}
-}
-
-@media screen and (max-width: 420px) {
-  .weekdays li, .days li {width: 12.5%;}
-  .days li .active {padding: 2px;}
-}
-
-@media screen and (max-width: 290px) {
-  .weekdays li, .days li {width: 12.2%;}
-}*/
 
 
 
@@ -350,6 +371,17 @@ nav a:hover{
     background-color: rgb(108, 108, 108);
     border-radius: 10px;
 }
+
+@media (max-width:926px){
+  .desc-calendario-chuva{
+    border-radius: 10px;
+    width: 350px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 18px;
+    padding-top: ;
+}}
 
 .infos-produtor{
     text-align: center;
@@ -380,6 +412,9 @@ nav a:hover{
     width: 110px;
 }
 
+@media (max-width:926px){
+
+}
 
 .diasMolhados h4{
     padding-top: 20px;

@@ -97,8 +97,20 @@ nav a:hover{
 
 
 
+@media (max-width:926px){
+    nav a{
+        font-size: 13px;
+    }
+}
+
 .space {
     padding: 10px;
+}
+#map {
+    width: 1300px;
+    height: 450px;
+    border-radius: 20PX;
+    z-index: 1;
 }
 
 .maps {
@@ -107,9 +119,9 @@ nav a:hover{
     margin: 0 auto;
     border: 5px solid black;
     border-radius: 25px;
-    background-image: url(/img/mapa.jpg);
+/*     background-image: url(/img/mapa.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
 
 
@@ -122,17 +134,22 @@ nav a:hover{
 
 .box {
     width: 40px;
-    height: 150px;
+    height: 100px;
     background-color: rgba(0, 0, 0, 0.574);
     backdrop-filter: blur( 13.5px );
     -webkit-backdrop-filter: blur( 13.5px );   
-    position: relative;
-    left: 10px;
-    top: -43px;
+
+    ;
 
     display: flex;
     flex-direction: column;
     border-radius: 8PX;
+
+
+    position: absolute;
+    z-index: 2;
+    top: 180px;
+    right: 200px;
 }
 
 .alto, .medio, .baixo {
@@ -159,31 +176,6 @@ label {
     background-color: green;
 }
 
-.moreRemove{
-    background-color: rgba(0, 0, 0, 0.574);
-    backdrop-filter: blur( 13.5px );
-    -webkit-backdrop-filter: blur( 13.5px );  
-    width: 30px;
-    border-radius: 20px;
-    position: relative;
-    left: 10px;
-    top: 180px;
-}
-
-.icons {
-    padding-top: 2px;
-    padding-bottom: 2px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-
-}
-.icons hr{
-    width: 20px;
-    color: white;
-}
-
 
 
 .spaceInfo {
@@ -200,10 +192,9 @@ label {
 }
 
 .alerta {
-  display: flex;
-  justify-content: end;
-  margin-right: 5px;
-  padding-top: 1px;
+  position: absolute;
+  top: 580px;
+  z-index: 3;
 }
 
 
@@ -214,22 +205,6 @@ label {
   background-color: rgba(0, 0, 0, 0.574);
   backdrop-filter: blur( 13.5px );
   -webkit-backdrop-filter: blur( 13.5px );  
-}
-
-.alert-info {
-  display: flex;
-  justify-content: end;
-  padding-top: 140px;
-  margin-right: 6px;
-}
-
-.alert-info img {
-  padding: 5px;
-  margin: 5px;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.574);
-  backdrop-filter: blur( 13.5px );
-    -webkit-backdrop-filter: blur( 13.5px );  
 }
 
 

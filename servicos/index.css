@@ -96,7 +96,11 @@ nav a:hover{
     box-shadow: 5px 5px 15px 5px #00000080;
     border: 2px solid black;
 }
-
+@media (max-width:926px){
+    nav a{
+        font-size: 13px;
+    }
+}
 
 .services {
     display: flex;

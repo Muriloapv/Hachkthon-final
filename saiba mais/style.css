@@ -48,7 +48,11 @@ header a{
     }
 }
 
-
+@media (max-width:926px){
+    nav a{
+        font-size: 13px;
+    }
+}
 
 .div-logo {
     display: flex;
