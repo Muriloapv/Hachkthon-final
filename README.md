@@ -11,7 +11,8 @@ Realizamos um mapeamento da região em 3D e apresentamos ao usuário a condiçã
  -Medição do gasto total de água e por quadrante analisado.
 
 Caso deseje saber mais sobre nossa aplicação, convido você a conhecer nosso protótipo:
-https://lnkd.in/dWnZKWWz
+https://hachkthon-final.vercel.app
 
 Deixo meu agradecimento a minha equipe que esteve ao meu lado. Rodrigo Pinesso e Igor Sena. 
 Um agradecimento a toda equipe do Sebrae e demais organizadores por nos proporcionarem uma experiência incrível. Infelizmente, este ano o pódio não veio, mas este é apenas o começo!
+
